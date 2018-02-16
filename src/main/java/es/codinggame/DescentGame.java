@@ -1,4 +1,4 @@
-package es.streams;
+package es.codinggame;
 
 import java.util.List;
 import java.util.Scanner;
@@ -32,10 +32,17 @@ public class DescentGame {
 		while (true) {
 			
 			// Almacena los datos de tipo int del objeto Scanner en una lista
-			List<Integer> heights = IntStream.range(0, 8).map(i -> in.nextInt()).boxed().collect(Collectors.toList());
+			List<Integer> heights = IntStream.range(0, 8)
+					.map(i -> in.nextInt())
+					.boxed()
+					.collect(Collectors.toList());
 			
 			// Obtenemos el valor máximo
-			int highest = heights.stream().mapToInt(i -> i).max().getAsInt();
+			int highest = heights.stream()
+					.mapToInt(i -> i)
+					.max()
+					.getAsInt();
+
 			System.out.println(heights.indexOf(highest));
 		}
 
