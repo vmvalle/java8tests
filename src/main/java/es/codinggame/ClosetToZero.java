@@ -12,13 +12,13 @@ import java.util.Arrays;
 public class ClosetToZero {
 
     public static void main(String [] args) {
-        String numbers = "2 1";
+        String numbers = "4 2";
         System.out.println("Case 1: " + getResult(numbers));
 
         numbers = "2 1 -1";
         System.out.println("Case 2: " + getResult(numbers));
 
-        numbers = "5 1 -2 3";
+        numbers = "5 1 -2 3 2 -4";
         System.out.println("Case 3: " + getResult(numbers));
 
         numbers = "";
