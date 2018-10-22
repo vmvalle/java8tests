@@ -16,7 +16,7 @@ public class StreamToList {
 		
 		Stream<Book> st = Stream.of(l1, l2, l3);
 		
-		// Convuerte el stream en una lista
+		// Convierte el stream en una lista
 		List<Book> lista = st.collect(Collectors.toList());
 		
 		System.out.println(lista);

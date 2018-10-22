@@ -24,11 +24,10 @@ public class CountWordsCamelCase {
     }
 
     static int camelcase2(String s) {
-        int upperCase = (int) s.codePoints()
-                .mapToObj(c -> (char) c)
-                .filter(c -> c.isUpperCase(c))
-                .count();
-        return upperCase + 1;
+        return (int) s.codePoints()
+                        .mapToObj(c -> (char) c)
+                        .filter(c -> c.isUpperCase(c))
+                        .count() + 1;
     }
 
 
